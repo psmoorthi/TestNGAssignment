@@ -21,7 +21,7 @@ public class TestNG_AssertionReports extends BaseTest{
   public void method2() {
 	 int expectedresults=15;
 	 int actual=number1-number2;
-	 Assert.assertTrue(true);
+	 Assert.assertTrue(false);
 	 Reporter.log("Failed Testcase", true); 
   }
   @Test
