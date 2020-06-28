@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="a" value="5"/>
+<parameter name="b" value="5"/>
+  <test thread-count="5" name="Grouping and Parameter Scenarios">
+	<groups>
+			<run>
+				<include name = "Test A"/>
+				<include name = "Track A"/>
+				<include name = "Track B"/>
+				<exclude name= "Test B"></exclude>
+				<exclude name= "Track C"></exclude>
+			</run>
+		</groups>  
+   <classes>
+  <class name="com.testNGassignment.TestNG_Groups_Parameters"/>
+  <class name="com.testNGassignment.Calculator"/> 
+   </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

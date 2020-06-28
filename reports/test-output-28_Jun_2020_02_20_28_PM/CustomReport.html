@@ -1,0 +1,269 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">.row{margin-right:0px; margin-left:0px;} .skills{text-align:center;padding-right:20px;line-height:40px;color:white;margin-bottom:2px}.passed{background-color:green}.failed{background-color:#f44336}.skipped{background-color:#808080}.testName{background-color:#406084}.total{background-color:#a7856b}.executionTime{background-color:#e59866}.padding-logs{padding:1cm}body{padding:0;font:14px "Calibri",Lucida Grande;line-height:1.5}.checkbox{padding-left:0;margin-top:-5px}.checkbox label{display:inline-block;position:relative;padding-left:5px}.checkbox label::before{content:"";display:inline-block;position:absolute;width:17px;height:17px;left:0;margin-left:-20px;border:1px solid #7f7fff;border-radius:3px;background-color:#fff;-webkit-transition:border .15s ease-in-out,color .15s ease-in-out;-o-transition:border .15s ease-in-out,color .15s ease-in-out;transition:border .15s ease-in-out,color .15s ease-in-out}.checkbox label::after{display:inline-block;position:absolute;width:16px;height:16px;left:0;top:0;margin-left:-10px;padding-left:3px;padding-top:1px;font-size:11px;color:#555}.checkbox input[type="checkbox"]{opacity:0}.checkbox input[type="checkbox"]:focus+label::before{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.checkbox input[type="checkbox"]:checked+label::after{font-family:"FontAwesome";content:"\f00c";margin-left:-20px}.checkbox input[type="checkbox"]:disabled+label{opacity:.65}.checkbox input[type="checkbox"]:disabled+label::before{background-color:#eee;cursor:not-allowed}.checkbox.checkbox-circle+label::before{border-radius:50%}.checkbox.checkbox-inline{margin-top:0}.checkbox-primary input[type="checkbox"]:checked+label::before{background-color:#428bca;border-color:#428bca}.checkbox-primary input[type="checkbox"]:checked+label::after{color:#fff}.checkbox-danger input[type="checkbox"]:checked+label::before{background-color:#d9534f;border-color:#d9534f}.checkbox-danger input[type="checkbox"]:checked+label::after{color:#fff}.checkbox-info input[type="checkbox"]:checked+label::before{background-color:#5bc0de;border-color:#5bc0de}.checkbox-info input[type="checkbox"]:checked+label::after{color:#fff}.checkbox-warning input[type="checkbox"]:checked+label::before{background-color:#f0ad4e;border-color:#f0ad4e}.checkbox-warning input[type="checkbox"]:checked+label::after{color:#fff}.checkbox-success input[type="checkbox"]:checked+label::before{background-color:#5cb85c;border-color:#5cb85c}.checkbox-success input[type="checkbox"]:checked+label::after{color:#fff}.box{color:black;padding:4px;margin-top:4px;border-bottom:1px double;border-top:1px double;border-left: 1px double;border-right: 1px double;border-color:gray}a{font-color:blue}.red{background:#ffb699}.green{background:#90ee90}.yellow{background:#ff6}.blue{background:#f0e68c}#mainTable{border-collapse:collapse}*{font-family:Tahoma,Calibri Light!important}</style> 
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+ </head>
+ <body background="screenshots/Background.png">
+  <script language="javascript"> function toggle(id,id2) {      var ele = document.getElementById(id);      var text = document.getElementById(id2);      if(ele.style.display == "block") {            ele.style.display = "none";            text.innerHTML = "[+]";      }      else {            ele.style.display = "block";            text.innerHTML = "[-]";      }}</script>
+  <script type="text/javascript">$('#fails').show();$('#pass').show();$('#skip').show();$(document).ready(function(){$("input:checkbox").change(function() {$.each($('input[type="checkbox"]'), function (key, value) {var inputValue = $(this).attr("value");var ischecked= $(this).is(':checked');if(ischecked){$("." + inputValue).show();}else{$("." + inputValue).hide();}});});});</script>
+  <meta charset="utf-8">
+  <title>Automation Report</title>
+  <style type="text/css">body{margin:5px;} .box{color: black; padding: 4px; margin-top: 4px;  border-bottom: 1px double;  border-top: 1px double; border-color:gray;}.red{ background: #ffb699; }.green{ background: #90EE90; }.yellow{ background: #FFFF66; }.blue{ background: #F0E68C; }#mainTable {border-collapse: collapse;}* {font-family: Tahoma, Calibri Light !important;}</style>
+  <div class="\&quot;row\&quot;">
+   <table border="0" style="width:100%">
+    <tbody>
+     <tr>
+      <td>
+       <table>
+        <tbody>
+         <tr>
+          <td align="left" width="10%"><img style="margin:5px;" src="screenshots/MavericLogo.png" border="2">&nbsp;</td>
+         </tr>
+        </tbody>
+       </table></td>
+      <td align="center"><b>
+        <left>
+         <font style="font-size: 25px;"> Test Application Automation Results </font>
+        </left></b></td>
+      <td>
+       <div name="jenkin_compiler_name" align="right">
+        <table style="background-color:rgba(0, 0, 0, 0);">
+         <tbody>
+          <tr>
+           <td><b>
+             <div id="runCompletedOn" class="label label-danger">
+              Sun Jun 28 14:20:57 IST 2020
+             </div><b></b></b></td>
+          </tr>
+         </tbody>
+        </table>
+       </div></td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="row">
+   <div class="col-xs-3 skills testName ">
+    Environment : <span id="environment">TestNG Suite</span>
+   </div>
+   <div class="col-xs-3 skills total ">
+    Total Test Cases : <span id="totalTestCases">9</span>
+   </div>
+   <div class="col-xs-3 skills passed">
+    Execution Time :<span id="executionTime">00:00:19</span>
+   </div>
+   <div class="col-xs-3 skills executionTime">
+    Browser : <span id="browser">chrome</span>
+   </div>
+   <div class="col-xs-3 skills passed">
+    Passed Test Cases : <span id="passedCount">0</span>
+   </div>
+   <div class="col-xs-3 skills failed">
+    Failed Test Cases :<span id="failedCount">9</span>
+   </div>
+   <div class="col-xs-3 skills testName">
+    Retry Count : 0<span id="retryCount"></span>
+   </div>
+   <div class="col-xs-3 skills total">
+    Groups : <span id="keywords"> </span>
+   </div>
+  </div>
+  <br>
+  <div class="row">
+   <h4 class="col-xs-12 col-sm-6 pull-left"><b><font color="#24468D">Report Details</font></b></h4>
+   <div class="col-xs-12 col-sm-6">
+    <div style="margin-left: 50%;">
+     <div class="col-xs-4 col-sm-offset-3 col-sm-3 checkbox checkbox-success">
+      <input type="checkbox" id="pass" value="green" name="checkbox" checked><label for="pass">Passed</label>
+     </div>
+     <div class="col-xs-4 col-sm-3 checkbox checkbox-danger">
+      <input type="checkbox" id="fails" value="red" name="checkbox" checked><label for="fails">Failed</label>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="fail" class="red box padding-logs">
+   add&nbsp;<a style="font-size:13px;vertical-align:2px;" id="add_failed_11420518141" href="javascript:toggle('add_failed_1420518141','add_failed_11420518141');"> [+]</a><a style="position: absolute;right: 9;color:black;"> Execution Time : 00:00:13</a>
+   <div id="add_failed_1420518141" style="display: none; background-color: rgb(255, 218, 204); margin-left: 0.5cm;">
+    <div class="messages">
+     28-Jun-2020 02:20:51 PM : org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MAVBCP532', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251' Driver info: driver.version: ChromeDriver remote stacktrace: Backtrace: Ordinal0 [0x002B9563+2725219] Ordinal0 [0x001B8551+1672529] Ordinal0 [0x000A0359+525145] Ordinal0 [0x0002CA64+51812] Ordinal0 [0x0004CC37+183351] Ordinal0 [0x0004CA3D+182845] Ordinal0 [0x0004A94B+174411] Ordinal0 [0x00032528+75048] Ordinal0 [0x000335A0+79264] Ordinal0 [0x00033539+79161] Ordinal0 [0x001CD607+1758727] GetHandleVerifier [0x003D6546+1050150] GetHandleVerifier [0x003D6291+1049457] GetHandleVerifier [0x003E10D7+1094071] GetHandleVerifier [0x003D6B46+1051686] Ordinal0 [0x001C5B06+1727238] Ordinal0 [0x001CEB7B+1764219] Ordinal0 [0x001CECE3+1764579] Ordinal0 [0x001E4C05+1854469] BaseThreadInitThunk [0x755A0419+25] RtlGetAppContainerNamedObjectPath [0x779066DD+237] RtlGetAppContainerNamedObjectPath [0x779066AD+189] (No symbol) [0x00000000] at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source) at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62) at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30) at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126) at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source) at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyInto(Unknown Source) at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source) at java.util.stream.AbstractPipeline.evaluate(Unknown Source) at java.util.stream.ReferencePipeline.findFirst(Unknown Source) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213) at org.openqa.selenium.remote.RemoteWebDriver.<init>
+      (RemoteWebDriver.java:131) at org.openqa.selenium.chrome.ChromeDriver.
+      <init>
+       (ChromeDriver.java:181) at org.openqa.selenium.chrome.ChromeDriver.
+       <init>
+        (ChromeDriver.java:168) at org.openqa.selenium.chrome.ChromeDriver.
+        <init>
+         (ChromeDriver.java:157) at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120) at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64) at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54) at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31) at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56) at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:55) at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:574) at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.lang.Thread.run(Unknown Source) 
+        </init>
+       </init>
+      </init>
+     </init>
+    </div>
+    <br>
+   </div>
+  </div>
+  <div id="fail" class="red box padding-logs">
+   subtract&nbsp;<a style="font-size:13px;vertical-align:2px;" id="subtract_failed_11420525832" href="javascript:toggle('subtract_failed_1420525832','subtract_failed_11420525832');"> [+]</a><a style="position: absolute;right: 9;color:black;"> Execution Time : 00:00:00</a>
+   <div id="subtract_failed_1420525832" style="display: none; background-color: rgb(255, 218, 204); margin-left: 0.5cm;">
+    <div class="messages">
+     28-Jun-2020 02:20:52 PM : org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MAVBCP532', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251' Driver info: driver.version: ChromeDriver remote stacktrace: Backtrace: Ordinal0 [0x002B9563+2725219] Ordinal0 [0x001B8551+1672529] Ordinal0 [0x000A0359+525145] Ordinal0 [0x0002CA64+51812] Ordinal0 [0x0004CC37+183351] Ordinal0 [0x0004CA3D+182845] Ordinal0 [0x0004A94B+174411] Ordinal0 [0x00032528+75048] Ordinal0 [0x000335A0+79264] Ordinal0 [0x00033539+79161] Ordinal0 [0x001CD607+1758727] GetHandleVerifier [0x003D6546+1050150] GetHandleVerifier [0x003D6291+1049457] GetHandleVerifier [0x003E10D7+1094071] GetHandleVerifier [0x003D6B46+1051686] Ordinal0 [0x001C5B06+1727238] Ordinal0 [0x001CEB7B+1764219] Ordinal0 [0x001CECE3+1764579] Ordinal0 [0x001E4C05+1854469] BaseThreadInitThunk [0x755A0419+25] RtlGetAppContainerNamedObjectPath [0x779066DD+237] RtlGetAppContainerNamedObjectPath [0x779066AD+189] (No symbol) [0x00000000] at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source) at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62) at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30) at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126) at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source) at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyInto(Unknown Source) at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source) at java.util.stream.AbstractPipeline.evaluate(Unknown Source) at java.util.stream.ReferencePipeline.findFirst(Unknown Source) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213) at org.openqa.selenium.remote.RemoteWebDriver.<init>
+      (RemoteWebDriver.java:131) at org.openqa.selenium.chrome.ChromeDriver.
+      <init>
+       (ChromeDriver.java:181) at org.openqa.selenium.chrome.ChromeDriver.
+       <init>
+        (ChromeDriver.java:168) at org.openqa.selenium.chrome.ChromeDriver.
+        <init>
+         (ChromeDriver.java:157) at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120) at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64) at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54) at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31) at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56) at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:55) at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:574) at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.lang.Thread.run(Unknown Source) 
+        </init>
+       </init>
+      </init>
+     </init>
+    </div>
+    <br>
+   </div>
+  </div>
+  <div id="fail" class="red box padding-logs">
+   multiply&nbsp;<a style="font-size:13px;vertical-align:2px;" id="multiply_failed_11420532173" href="javascript:toggle('multiply_failed_1420532173','multiply_failed_11420532173');"> [+]</a><a style="position: absolute;right: 9;color:black;"> Execution Time : 00:00:00</a>
+   <div id="multiply_failed_1420532173" style="display: none; background-color: rgb(255, 218, 204); margin-left: 0.5cm;">
+    <div class="messages">
+     28-Jun-2020 02:20:53 PM : org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MAVBCP532', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251' Driver info: driver.version: ChromeDriver remote stacktrace: Backtrace: Ordinal0 [0x002B9563+2725219] Ordinal0 [0x001B8551+1672529] Ordinal0 [0x000A0359+525145] Ordinal0 [0x0002CA64+51812] Ordinal0 [0x0004CC37+183351] Ordinal0 [0x0004CA3D+182845] Ordinal0 [0x0004A94B+174411] Ordinal0 [0x00032528+75048] Ordinal0 [0x000335A0+79264] Ordinal0 [0x00033539+79161] Ordinal0 [0x001CD607+1758727] GetHandleVerifier [0x003D6546+1050150] GetHandleVerifier [0x003D6291+1049457] GetHandleVerifier [0x003E10D7+1094071] GetHandleVerifier [0x003D6B46+1051686] Ordinal0 [0x001C5B06+1727238] Ordinal0 [0x001CEB7B+1764219] Ordinal0 [0x001CECE3+1764579] Ordinal0 [0x001E4C05+1854469] BaseThreadInitThunk [0x755A0419+25] RtlGetAppContainerNamedObjectPath [0x779066DD+237] RtlGetAppContainerNamedObjectPath [0x779066AD+189] (No symbol) [0x00000000] at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source) at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62) at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30) at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126) at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source) at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyInto(Unknown Source) at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source) at java.util.stream.AbstractPipeline.evaluate(Unknown Source) at java.util.stream.ReferencePipeline.findFirst(Unknown Source) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213) at org.openqa.selenium.remote.RemoteWebDriver.<init>
+      (RemoteWebDriver.java:131) at org.openqa.selenium.chrome.ChromeDriver.
+      <init>
+       (ChromeDriver.java:181) at org.openqa.selenium.chrome.ChromeDriver.
+       <init>
+        (ChromeDriver.java:168) at org.openqa.selenium.chrome.ChromeDriver.
+        <init>
+         (ChromeDriver.java:157) at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120) at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64) at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54) at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31) at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56) at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:55) at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:574) at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.lang.Thread.run(Unknown Source) 
+        </init>
+       </init>
+      </init>
+     </init>
+    </div>
+    <br>
+   </div>
+  </div>
+  <div id="fail" class="red box padding-logs">
+   divideInt&nbsp;<a style="font-size:13px;vertical-align:2px;" id="divideInt_failed_11420538384" href="javascript:toggle('divideInt_failed_1420538384','divideInt_failed_11420538384');"> [+]</a><a style="position: absolute;right: 9;color:black;"> Execution Time : 00:00:00</a>
+   <div id="divideInt_failed_1420538384" style="display: none; background-color: rgb(255, 218, 204); margin-left: 0.5cm;">
+    <div class="messages">
+     28-Jun-2020 02:20:53 PM : org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MAVBCP532', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251' Driver info: driver.version: ChromeDriver remote stacktrace: Backtrace: Ordinal0 [0x002B9563+2725219] Ordinal0 [0x001B8551+1672529] Ordinal0 [0x000A0359+525145] Ordinal0 [0x0002CA64+51812] Ordinal0 [0x0004CC37+183351] Ordinal0 [0x0004CA3D+182845] Ordinal0 [0x0004A94B+174411] Ordinal0 [0x00032528+75048] Ordinal0 [0x000335A0+79264] Ordinal0 [0x00033539+79161] Ordinal0 [0x001CD607+1758727] GetHandleVerifier [0x003D6546+1050150] GetHandleVerifier [0x003D6291+1049457] GetHandleVerifier [0x003E10D7+1094071] GetHandleVerifier [0x003D6B46+1051686] Ordinal0 [0x001C5B06+1727238] Ordinal0 [0x001CEB7B+1764219] Ordinal0 [0x001CECE3+1764579] Ordinal0 [0x001E4C05+1854469] BaseThreadInitThunk [0x755A0419+25] RtlGetAppContainerNamedObjectPath [0x779066DD+237] RtlGetAppContainerNamedObjectPath [0x779066AD+189] (No symbol) [0x00000000] at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source) at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62) at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30) at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126) at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source) at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyInto(Unknown Source) at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source) at java.util.stream.AbstractPipeline.evaluate(Unknown Source) at java.util.stream.ReferencePipeline.findFirst(Unknown Source) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213) at org.openqa.selenium.remote.RemoteWebDriver.<init>
+      (RemoteWebDriver.java:131) at org.openqa.selenium.chrome.ChromeDriver.
+      <init>
+       (ChromeDriver.java:181) at org.openqa.selenium.chrome.ChromeDriver.
+       <init>
+        (ChromeDriver.java:168) at org.openqa.selenium.chrome.ChromeDriver.
+        <init>
+         (ChromeDriver.java:157) at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120) at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64) at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54) at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31) at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56) at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:55) at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:574) at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.lang.Thread.run(Unknown Source) 
+        </init>
+       </init>
+      </init>
+     </init>
+    </div>
+    <br>
+   </div>
+  </div>
+  <div id="fail" class="red box padding-logs">
+   divideReal&nbsp;<a style="font-size:13px;vertical-align:2px;" id="divideReal_failed_11420544525" href="javascript:toggle('divideReal_failed_1420544525','divideReal_failed_11420544525');"> [+]</a><a style="position: absolute;right: 9;color:black;"> Execution Time : 00:00:00</a>
+   <div id="divideReal_failed_1420544525" style="display: none; background-color: rgb(255, 218, 204); margin-left: 0.5cm;">
+    <div class="messages">
+     28-Jun-2020 02:20:54 PM : org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MAVBCP532', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251' Driver info: driver.version: ChromeDriver remote stacktrace: Backtrace: Ordinal0 [0x002B9563+2725219] Ordinal0 [0x001B8551+1672529] Ordinal0 [0x000A0359+525145] Ordinal0 [0x0002CA64+51812] Ordinal0 [0x0004CC37+183351] Ordinal0 [0x0004CA3D+182845] Ordinal0 [0x0004A94B+174411] Ordinal0 [0x00032528+75048] Ordinal0 [0x000335A0+79264] Ordinal0 [0x00033539+79161] Ordinal0 [0x001CD607+1758727] GetHandleVerifier [0x003D6546+1050150] GetHandleVerifier [0x003D6291+1049457] GetHandleVerifier [0x003E10D7+1094071] GetHandleVerifier [0x003D6B46+1051686] Ordinal0 [0x001C5B06+1727238] Ordinal0 [0x001CEB7B+1764219] Ordinal0 [0x001CECE3+1764579] Ordinal0 [0x001E4C05+1854469] BaseThreadInitThunk [0x755A0419+25] RtlGetAppContainerNamedObjectPath [0x779066DD+237] RtlGetAppContainerNamedObjectPath [0x779066AD+189] (No symbol) [0x00000000] at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source) at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62) at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30) at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126) at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source) at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyInto(Unknown Source) at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source) at java.util.stream.AbstractPipeline.evaluate(Unknown Source) at java.util.stream.ReferencePipeline.findFirst(Unknown Source) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213) at org.openqa.selenium.remote.RemoteWebDriver.<init>
+      (RemoteWebDriver.java:131) at org.openqa.selenium.chrome.ChromeDriver.
+      <init>
+       (ChromeDriver.java:181) at org.openqa.selenium.chrome.ChromeDriver.
+       <init>
+        (ChromeDriver.java:168) at org.openqa.selenium.chrome.ChromeDriver.
+        <init>
+         (ChromeDriver.java:157) at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120) at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64) at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54) at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31) at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56) at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:55) at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:574) at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.lang.Thread.run(Unknown Source) 
+        </init>
+       </init>
+      </init>
+     </init>
+    </div>
+    <br>
+   </div>
+  </div>
+  <div id="fail" class="red box padding-logs">
+   exponent&nbsp;<a style="font-size:13px;vertical-align:2px;" id="exponent_failed_11420555926" href="javascript:toggle('exponent_failed_1420555926','exponent_failed_11420555926');"> [+]</a><a style="position: absolute;right: 9;color:black;"> Execution Time : 00:00:01</a>
+   <div id="exponent_failed_1420555926" style="display: none; background-color: rgb(255, 218, 204); margin-left: 0.5cm;">
+    <div class="messages">
+     28-Jun-2020 02:20:55 PM : org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MAVBCP532', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251' Driver info: driver.version: ChromeDriver remote stacktrace: Backtrace: Ordinal0 [0x002B9563+2725219] Ordinal0 [0x001B8551+1672529] Ordinal0 [0x000A0359+525145] Ordinal0 [0x0002CA64+51812] Ordinal0 [0x0004CC37+183351] Ordinal0 [0x0004CA3D+182845] Ordinal0 [0x0004A94B+174411] Ordinal0 [0x00032528+75048] Ordinal0 [0x000335A0+79264] Ordinal0 [0x00033539+79161] Ordinal0 [0x001CD607+1758727] GetHandleVerifier [0x003D6546+1050150] GetHandleVerifier [0x003D6291+1049457] GetHandleVerifier [0x003E10D7+1094071] GetHandleVerifier [0x003D6B46+1051686] Ordinal0 [0x001C5B06+1727238] Ordinal0 [0x001CEB7B+1764219] Ordinal0 [0x001CECE3+1764579] Ordinal0 [0x001E4C05+1854469] BaseThreadInitThunk [0x755A0419+25] RtlGetAppContainerNamedObjectPath [0x779066DD+237] RtlGetAppContainerNamedObjectPath [0x779066AD+189] (No symbol) [0x00000000] at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source) at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62) at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30) at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126) at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source) at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyInto(Unknown Source) at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source) at java.util.stream.AbstractPipeline.evaluate(Unknown Source) at java.util.stream.ReferencePipeline.findFirst(Unknown Source) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213) at org.openqa.selenium.remote.RemoteWebDriver.<init>
+      (RemoteWebDriver.java:131) at org.openqa.selenium.chrome.ChromeDriver.
+      <init>
+       (ChromeDriver.java:181) at org.openqa.selenium.chrome.ChromeDriver.
+       <init>
+        (ChromeDriver.java:168) at org.openqa.selenium.chrome.ChromeDriver.
+        <init>
+         (ChromeDriver.java:157) at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120) at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64) at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54) at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31) at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56) at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:55) at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:574) at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.lang.Thread.run(Unknown Source) 
+        </init>
+       </init>
+      </init>
+     </init>
+    </div>
+    <br>
+   </div>
+  </div>
+  <div id="fail" class="red box padding-logs">
+   inverse&nbsp;<a style="font-size:13px;vertical-align:2px;" id="inverse_failed_11420562007" href="javascript:toggle('inverse_failed_1420562007','inverse_failed_11420562007');"> [+]</a><a style="position: absolute;right: 9;color:black;"> Execution Time : 00:00:00</a>
+   <div id="inverse_failed_1420562007" style="display: none; background-color: rgb(255, 218, 204); margin-left: 0.5cm;">
+    <div class="messages">
+     28-Jun-2020 02:20:56 PM : org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MAVBCP532', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251' Driver info: driver.version: ChromeDriver remote stacktrace: Backtrace: Ordinal0 [0x002B9563+2725219] Ordinal0 [0x001B8551+1672529] Ordinal0 [0x000A0359+525145] Ordinal0 [0x0002CA64+51812] Ordinal0 [0x0004CC37+183351] Ordinal0 [0x0004CA3D+182845] Ordinal0 [0x0004A94B+174411] Ordinal0 [0x00032528+75048] Ordinal0 [0x000335A0+79264] Ordinal0 [0x00033539+79161] Ordinal0 [0x001CD607+1758727] GetHandleVerifier [0x003D6546+1050150] GetHandleVerifier [0x003D6291+1049457] GetHandleVerifier [0x003E10D7+1094071] GetHandleVerifier [0x003D6B46+1051686] Ordinal0 [0x001C5B06+1727238] Ordinal0 [0x001CEB7B+1764219] Ordinal0 [0x001CECE3+1764579] Ordinal0 [0x001E4C05+1854469] BaseThreadInitThunk [0x755A0419+25] RtlGetAppContainerNamedObjectPath [0x779066DD+237] RtlGetAppContainerNamedObjectPath [0x779066AD+189] (No symbol) [0x00000000] at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source) at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62) at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30) at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126) at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source) at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyInto(Unknown Source) at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source) at java.util.stream.AbstractPipeline.evaluate(Unknown Source) at java.util.stream.ReferencePipeline.findFirst(Unknown Source) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213) at org.openqa.selenium.remote.RemoteWebDriver.<init>
+      (RemoteWebDriver.java:131) at org.openqa.selenium.chrome.ChromeDriver.
+      <init>
+       (ChromeDriver.java:181) at org.openqa.selenium.chrome.ChromeDriver.
+       <init>
+        (ChromeDriver.java:168) at org.openqa.selenium.chrome.ChromeDriver.
+        <init>
+         (ChromeDriver.java:157) at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120) at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64) at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54) at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31) at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56) at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:55) at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:574) at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.lang.Thread.run(Unknown Source) 
+        </init>
+       </init>
+      </init>
+     </init>
+    </div>
+    <br>
+   </div>
+  </div>
+  <div id="fail" class="red box padding-logs">
+   modulus&nbsp;<a style="font-size:13px;vertical-align:2px;" id="modulus_failed_11420568068" href="javascript:toggle('modulus_failed_1420568068','modulus_failed_11420568068');"> [+]</a><a style="position: absolute;right: 9;color:black;"> Execution Time : 00:00:00</a>
+   <div id="modulus_failed_1420568068" style="display: none; background-color: rgb(255, 218, 204); margin-left: 0.5cm;">
+    <div class="messages">
+     28-Jun-2020 02:20:56 PM : org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MAVBCP532', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251' Driver info: driver.version: ChromeDriver remote stacktrace: Backtrace: Ordinal0 [0x002B9563+2725219] Ordinal0 [0x001B8551+1672529] Ordinal0 [0x000A0359+525145] Ordinal0 [0x0002CA64+51812] Ordinal0 [0x0004CC37+183351] Ordinal0 [0x0004CA3D+182845] Ordinal0 [0x0004A94B+174411] Ordinal0 [0x00032528+75048] Ordinal0 [0x000335A0+79264] Ordinal0 [0x00033539+79161] Ordinal0 [0x001CD607+1758727] GetHandleVerifier [0x003D6546+1050150] GetHandleVerifier [0x003D6291+1049457] GetHandleVerifier [0x003E10D7+1094071] GetHandleVerifier [0x003D6B46+1051686] Ordinal0 [0x001C5B06+1727238] Ordinal0 [0x001CEB7B+1764219] Ordinal0 [0x001CECE3+1764579] Ordinal0 [0x001E4C05+1854469] BaseThreadInitThunk [0x755A0419+25] RtlGetAppContainerNamedObjectPath [0x779066DD+237] RtlGetAppContainerNamedObjectPath [0x779066AD+189] (No symbol) [0x00000000] at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source) at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62) at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30) at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126) at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source) at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyInto(Unknown Source) at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source) at java.util.stream.AbstractPipeline.evaluate(Unknown Source) at java.util.stream.ReferencePipeline.findFirst(Unknown Source) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213) at org.openqa.selenium.remote.RemoteWebDriver.<init>
+      (RemoteWebDriver.java:131) at org.openqa.selenium.chrome.ChromeDriver.
+      <init>
+       (ChromeDriver.java:181) at org.openqa.selenium.chrome.ChromeDriver.
+       <init>
+        (ChromeDriver.java:168) at org.openqa.selenium.chrome.ChromeDriver.
+        <init>
+         (ChromeDriver.java:157) at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120) at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64) at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54) at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31) at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56) at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:55) at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:574) at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.lang.Thread.run(Unknown Source) 
+        </init>
+       </init>
+      </init>
+     </init>
+    </div>
+    <br>
+   </div>
+  </div>
+  <div id="fail" class="red box padding-logs">
+   negate&nbsp;<a style="font-size:13px;vertical-align:2px;" id="negate_failed_11420574299" href="javascript:toggle('negate_failed_1420574299','negate_failed_11420574299');"> [+]</a><a style="position: absolute;right: 9;color:black;"> Execution Time : 00:00:00</a>
+   <div id="negate_failed_1420574299" style="display: none; background-color: rgb(255, 218, 204); margin-left: 0.5cm;">
+    <div class="messages">
+     28-Jun-2020 02:20:57 PM : org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03' System info: host: 'MAVBCP532', ip: '192.168.43.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251' Driver info: driver.version: ChromeDriver remote stacktrace: Backtrace: Ordinal0 [0x002B9563+2725219] Ordinal0 [0x001B8551+1672529] Ordinal0 [0x000A0359+525145] Ordinal0 [0x0002CA64+51812] Ordinal0 [0x0004CC37+183351] Ordinal0 [0x0004CA3D+182845] Ordinal0 [0x0004A94B+174411] Ordinal0 [0x00032528+75048] Ordinal0 [0x000335A0+79264] Ordinal0 [0x00033539+79161] Ordinal0 [0x001CD607+1758727] GetHandleVerifier [0x003D6546+1050150] GetHandleVerifier [0x003D6291+1049457] GetHandleVerifier [0x003E10D7+1094071] GetHandleVerifier [0x003D6B46+1051686] Ordinal0 [0x001C5B06+1727238] Ordinal0 [0x001CEB7B+1764219] Ordinal0 [0x001CECE3+1764579] Ordinal0 [0x001E4C05+1854469] BaseThreadInitThunk [0x755A0419+25] RtlGetAppContainerNamedObjectPath [0x779066DD+237] RtlGetAppContainerNamedObjectPath [0x779066AD+189] (No symbol) [0x00000000] at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source) at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62) at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30) at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126) at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source) at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source) at java.util.stream.AbstractPipeline.copyInto(Unknown Source) at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source) at java.util.stream.AbstractPipeline.evaluate(Unknown Source) at java.util.stream.ReferencePipeline.findFirst(Unknown Source) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128) at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74) at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136) at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213) at org.openqa.selenium.remote.RemoteWebDriver.<init>
+      (RemoteWebDriver.java:131) at org.openqa.selenium.chrome.ChromeDriver.
+      <init>
+       (ChromeDriver.java:181) at org.openqa.selenium.chrome.ChromeDriver.
+       <init>
+        (ChromeDriver.java:168) at org.openqa.selenium.chrome.ChromeDriver.
+        <init>
+         (ChromeDriver.java:157) at com.maveric.core.driver.DriverFactory.getChromeDriver(DriverFactory.java:120) at com.maveric.core.driver.DriverFactory.createDriver(DriverFactory.java:64) at com.maveric.core.driver.DriverFactory.driverSetup(DriverFactory.java:54) at com.maveric.core.testng.listeners.DriverListener.beforeInvocation(DriverListener.java:31) at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56) at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:55) at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:574) at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816) at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) at java.lang.Thread.run(Unknown Source) 
+        </init>
+       </init>
+      </init>
+     </init>
+    </div>
+    <br>
+   </div>
+  </div>
+ </body>
+</html>
