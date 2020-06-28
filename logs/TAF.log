@@ -193,3 +193,16 @@ Driver info: driver.version: RemoteWebDriver
 2020-06-28 14:39:09.263 [TestNG-test=Default test-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
 2020-06-28 14:39:10.476 [TestNG-test=Default test-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
 2020-06-28 17:09:47.129 [main] INFO  com.maveric.core.testng.listeners.ReportListener - reports folder created successfully :./reports/test-output-28_Jun_2020_05_09_47_PM
+2020-06-28 18:34:48.467 [main] INFO  com.maveric.core.testng.listeners.ReportListener - reports folder created successfully :./reports/test-output-28_Jun_2020_06_34_48_PM
+2020-06-28 18:34:48.973 [main] INFO  com.maveric.core.testng.listeners.TestListener - Thread Count : 1
+2020-06-28 18:34:48.974 [main] INFO  com.maveric.core.testng.listeners.TestListener - Data Provider Count : 1
+2020-06-28 18:35:33.170 [TestNG-test=Test-2] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
+2020-06-28 18:35:33.165 [TestNG-test=Test-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
+2020-06-28 18:38:35.218 [TestNG-test=Test-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
+2020-06-28 18:38:36.850 [TestNG-test=Test-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
+2020-06-28 18:38:38.781 [TestNG-test=Test-2] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
+2020-06-28 18:38:40.341 [TestNG-test=Test-2] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
+2020-06-28 18:40:58.635 [TestNG-test=Test-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
+2020-06-28 18:40:59.791 [TestNG-test=Test-2] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
+2020-06-28 18:40:59.884 [TestNG-test=Test-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
+2020-06-28 18:41:01.236 [TestNG-test=Test-2] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed

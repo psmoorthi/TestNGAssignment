@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.maveric.core.testng.BaseTest;
 import com.maveric.core.utils.reporter.Report;
 
-public class Calculator extends BaseTest{
+public class Calculator{
 	
 	static int number1 = 4;
 	static int number2 = 2;

@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="21" passed="21">
   <reporter-output>
+    <line>
+      <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+    </line>
+    <line>
+      <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="1106" started-at="2020-06-28T17:14:47 IST" finished-at="2020-06-28T17:14:48 IST">
+  <suite name="Suite" duration-ms="4039" started-at="2020-06-28T18:48:41 IST" finished-at="2020-06-28T18:48:45 IST">
     <groups>
       <group name="Track B">
         <method signature="Calculator.divideReal()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="divideReal" class="com.testNGassignment.Calculator"/>
@@ -20,9 +47,74 @@
         <method signature="Calculator.modulus()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="modulus" class="com.testNGassignment.Calculator"/>
       </group> <!-- Track C -->
     </groups>
-    <test name="Test" duration-ms="1106" started-at="2020-06-28T17:14:47 IST" finished-at="2020-06-28T17:14:48 IST">
+    <test name="Test" duration-ms="4039" started-at="2020-06-28T18:48:41 IST" finished-at="2020-06-28T18:48:45 IST">
+      <class name="com.testNGassignment.Calculator">
+        <test-method status="PASS" signature="add()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="add" duration-ms="3190" started-at="2020-06-28T18:48:41 IST" finished-at="2020-06-28T18:48:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="divideInt()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="divideInt" duration-ms="3191" started-at="2020-06-28T18:48:41 IST" finished-at="2020-06-28T18:48:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- divideInt -->
+        <test-method status="PASS" signature="divideReal()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="divideReal" duration-ms="15" started-at="2020-06-28T18:48:45 IST" finished-at="2020-06-28T18:48:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- divideReal -->
+        <test-method status="PASS" signature="exponent()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="exponent" duration-ms="7" started-at="2020-06-28T18:48:45 IST" finished-at="2020-06-28T18:48:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- exponent -->
+        <test-method status="PASS" signature="inverse()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="inverse" duration-ms="12" started-at="2020-06-28T18:48:45 IST" finished-at="2020-06-28T18:48:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- inverse -->
+        <test-method status="PASS" signature="modulus()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="modulus" duration-ms="4" started-at="2020-06-28T18:48:45 IST" finished-at="2020-06-28T18:48:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- modulus -->
+        <test-method status="PASS" signature="multiply()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="multiply" duration-ms="25" started-at="2020-06-28T18:48:45 IST" finished-at="2020-06-28T18:48:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- multiply -->
+        <test-method status="PASS" signature="negate()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="negate" duration-ms="7" started-at="2020-06-28T18:48:45 IST" finished-at="2020-06-28T18:48:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- negate -->
+        <test-method status="PASS" signature="subtract()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="subtract" duration-ms="3" started-at="2020-06-28T18:48:45 IST" finished-at="2020-06-28T18:48:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[28-Jun-2020 06:48:45 PM : Test Passed Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- subtract -->
+      </class> <!-- com.testNGassignment.Calculator -->
       <class name="com.testNGassignment.Testng_DataProviders">
-        <test-method status="PASS" signature="add(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="add" duration-ms="22" started-at="2020-06-28T17:14:47 IST" data-provider="inputs" finished-at="2020-06-28T17:14:47 IST">
+        <test-method status="PASS" signature="add(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="add" duration-ms="14" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -38,39 +130,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add -->
-        <test-method status="PASS" signature="add(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="add" duration-ms="28" started-at="2020-06-28T17:14:47 IST" data-provider="inputs" finished-at="2020-06-28T17:14:47 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add -->
-        <test-method status="PASS" signature="add(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="add" duration-ms="11" started-at="2020-06-28T17:14:47 IST" data-provider="inputs" finished-at="2020-06-28T17:14:47 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add -->
-        <test-method status="PASS" signature="divide(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="divide" duration-ms="13" started-at="2020-06-28T17:14:47 IST" data-provider="inputs" finished-at="2020-06-28T17:14:47 IST">
+        <test-method status="PASS" signature="divide(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="divide" duration-ms="2" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -86,7 +146,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- divide -->
-        <test-method status="PASS" signature="divide(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="divide" duration-ms="5" started-at="2020-06-28T17:14:47 IST" data-provider="inputs" finished-at="2020-06-28T17:14:47 IST">
+        <test-method status="PASS" signature="add(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="add" duration-ms="3" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="divide(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="divide" duration-ms="35" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -102,7 +178,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- divide -->
-        <test-method status="PASS" signature="divide(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="divide" duration-ms="80" started-at="2020-06-28T17:14:48 IST" data-provider="inputs" finished-at="2020-06-28T17:14:48 IST">
+        <test-method status="PASS" signature="add(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="add" duration-ms="4" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -117,8 +193,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- divide -->
-        <test-method status="PASS" signature="multiply(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="multiply" duration-ms="11" started-at="2020-06-28T17:14:48 IST" data-provider="inputs" finished-at="2020-06-28T17:14:48 IST">
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="multiply(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="multiply" duration-ms="3" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -134,7 +210,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multiply -->
-        <test-method status="PASS" signature="multiply(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="multiply" duration-ms="27" started-at="2020-06-28T17:14:48 IST" data-provider="inputs" finished-at="2020-06-28T17:14:48 IST">
+        <test-method status="PASS" signature="multiply(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="multiply" duration-ms="17" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -150,7 +226,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multiply -->
-        <test-method status="PASS" signature="multiply(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="multiply" duration-ms="17" started-at="2020-06-28T17:14:48 IST" data-provider="inputs" finished-at="2020-06-28T17:14:48 IST">
+        <test-method status="PASS" signature="multiply(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="multiply" duration-ms="16" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -166,7 +242,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multiply -->
-        <test-method status="PASS" signature="subtract(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="subtract" duration-ms="11" started-at="2020-06-28T17:14:48 IST" data-provider="inputs" finished-at="2020-06-28T17:14:48 IST">
+        <test-method status="PASS" signature="subtract(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="subtract" duration-ms="4" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -182,7 +258,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subtract -->
-        <test-method status="PASS" signature="subtract(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="subtract" duration-ms="120" started-at="2020-06-28T17:14:48 IST" data-provider="inputs" finished-at="2020-06-28T17:14:48 IST">
+        <test-method status="PASS" signature="divide(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="divide" duration-ms="5" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divide -->
+        <test-method status="PASS" signature="subtract(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="subtract" duration-ms="24" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -198,7 +290,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subtract -->
-        <test-method status="PASS" signature="subtract(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="subtract" duration-ms="4" started-at="2020-06-28T17:14:48 IST" data-provider="inputs" finished-at="2020-06-28T17:14:48 IST">
+        <test-method status="PASS" signature="subtract(int, int)[pri:0, instance:com.testNGassignment.Testng_DataProviders@1060b431]" name="subtract" duration-ms="3" started-at="2020-06-28T18:48:45 IST" data-provider="inputs" finished-at="2020-06-28T18:48:45 IST">
           <params>
             <param index="0">
               <value>
@@ -215,44 +307,6 @@
           </reporter-output>
         </test-method> <!-- subtract -->
       </class> <!-- com.testNGassignment.Testng_DataProviders -->
-      <class name="com.testNGassignment.Calculator">
-        <test-method status="PASS" signature="add()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="add" duration-ms="31" started-at="2020-06-28T17:14:47 IST" finished-at="2020-06-28T17:14:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add -->
-        <test-method status="PASS" signature="divideInt()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="divideInt" duration-ms="16" started-at="2020-06-28T17:14:47 IST" finished-at="2020-06-28T17:14:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- divideInt -->
-        <test-method status="PASS" signature="divideReal()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="divideReal" duration-ms="153" started-at="2020-06-28T17:14:47 IST" finished-at="2020-06-28T17:14:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- divideReal -->
-        <test-method status="PASS" signature="exponent()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="exponent" duration-ms="4" started-at="2020-06-28T17:14:47 IST" finished-at="2020-06-28T17:14:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exponent -->
-        <test-method status="PASS" signature="inverse()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="inverse" duration-ms="14" started-at="2020-06-28T17:14:47 IST" finished-at="2020-06-28T17:14:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inverse -->
-        <test-method status="PASS" signature="modulus()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="modulus" duration-ms="6" started-at="2020-06-28T17:14:47 IST" finished-at="2020-06-28T17:14:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modulus -->
-        <test-method status="PASS" signature="multiply()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="multiply" duration-ms="9" started-at="2020-06-28T17:14:48 IST" finished-at="2020-06-28T17:14:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- multiply -->
-        <test-method status="PASS" signature="negate()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="negate" duration-ms="96" started-at="2020-06-28T17:14:48 IST" finished-at="2020-06-28T17:14:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negate -->
-        <test-method status="PASS" signature="subtract()[pri:0, instance:com.testNGassignment.Calculator@612fc6eb]" name="subtract" duration-ms="2" started-at="2020-06-28T17:14:48 IST" finished-at="2020-06-28T17:14:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- subtract -->
-      </class> <!-- com.testNGassignment.Calculator -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
