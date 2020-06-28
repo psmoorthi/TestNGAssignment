@@ -1,100 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="13" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[Failed due to Actual and Expected not matched]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="439" started-at="2020-06-28T18:56:04 IST" finished-at="2020-06-28T18:56:05 IST">
+  <suite name="Default suite" duration-ms="55697" started-at="2020-06-28T19:08:53 IST" finished-at="2020-06-28T19:09:48 IST">
     <groups>
-      <group name="Test C">
-        <method signature="Calculator.divideInt()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="divideInt" class="com.testNGassignment.Calculator"/>
-        <method signature="Calculator.modulus()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="modulus" class="com.testNGassignment.Calculator"/>
-      </group> <!-- Test C -->
-      <group name="Test A">
-        <method signature="Calculator.add()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="add" class="com.testNGassignment.Calculator"/>
-        <method signature="Calculator.exponent()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="exponent" class="com.testNGassignment.Calculator"/>
-        <method signature="Calculator.negate()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="negate" class="com.testNGassignment.Calculator"/>
-        <method signature="Calculator.subtract()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="subtract" class="com.testNGassignment.Calculator"/>
-        <method signature="TestNG_Groups_Parameters.add(int, int)[pri:0, instance:com.testNGassignment.TestNG_Groups_Parameters@11758f2a]" name="add" class="com.testNGassignment.TestNG_Groups_Parameters"/>
-        <method signature="TestNG_Groups_Parameters.divide(int, int)[pri:0, instance:com.testNGassignment.TestNG_Groups_Parameters@11758f2a]" name="divide" class="com.testNGassignment.TestNG_Groups_Parameters"/>
-        <method signature="TestNG_Groups_Parameters.multiply(int, int)[pri:0, instance:com.testNGassignment.TestNG_Groups_Parameters@11758f2a]" name="multiply" class="com.testNGassignment.TestNG_Groups_Parameters"/>
-      </group> <!-- Test A -->
     </groups>
-    <test name="Grouping and Parameter Scenarios" duration-ms="439" started-at="2020-06-28T18:56:04 IST" finished-at="2020-06-28T18:56:05 IST">
-      <class name="com.testNGassignment.Calculator">
-        <test-method status="PASS" signature="add()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="add" duration-ms="15" started-at="2020-06-28T18:56:05 IST" finished-at="2020-06-28T18:56:05 IST">
+    <test name="Default test" duration-ms="55697" started-at="2020-06-28T19:08:53 IST" finished-at="2020-06-28T19:09:48 IST">
+      <class name="com.testNGassignment.TestNG_AssertionReports">
+        <test-method status="PASS" signature="method3()[pri:0, instance:com.testNGassignment.TestNG_AssertionReports@4eb7f003]" name="method3" duration-ms="28382" started-at="2020-06-28T19:08:53 IST" finished-at="2020-06-28T19:09:21 IST">
           <reporter-output>
+            <line>
+              <![CDATA[Failed due to Actual and Expected not matched]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- add -->
-        <test-method status="PASS" signature="divideInt()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="divideInt" duration-ms="14" started-at="2020-06-28T18:56:05 IST" finished-at="2020-06-28T18:56:05 IST">
+        </test-method> <!-- method3 -->
+        <test-method status="PASS" signature="method4()[pri:0, instance:com.testNGassignment.TestNG_AssertionReports@4eb7f003]" name="method4" duration-ms="25764" started-at="2020-06-28T19:09:22 IST" finished-at="2020-06-28T19:09:48 IST">
           <reporter-output>
+            <line>
+              <![CDATA[Test Passed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- divideInt -->
-        <test-method status="PASS" signature="exponent()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="exponent" duration-ms="11" started-at="2020-06-28T18:56:05 IST" finished-at="2020-06-28T18:56:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exponent -->
-        <test-method status="PASS" signature="modulus()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="modulus" duration-ms="28" started-at="2020-06-28T18:56:05 IST" finished-at="2020-06-28T18:56:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modulus -->
-        <test-method status="PASS" signature="negate()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="negate" duration-ms="6" started-at="2020-06-28T18:56:05 IST" finished-at="2020-06-28T18:56:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negate -->
-        <test-method status="PASS" signature="subtract()[pri:0, instance:com.testNGassignment.Calculator@e720b71]" name="subtract" duration-ms="7" started-at="2020-06-28T18:56:05 IST" finished-at="2020-06-28T18:56:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- subtract -->
-      </class> <!-- com.testNGassignment.Calculator -->
-      <class name="com.testNGassignment.TestNG_Groups_Parameters">
-        <test-method status="PASS" signature="add(int, int)[pri:0, instance:com.testNGassignment.TestNG_Groups_Parameters@11758f2a]" name="add" duration-ms="28" started-at="2020-06-28T18:56:04 IST" finished-at="2020-06-28T18:56:04 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add -->
-        <test-method status="PASS" signature="divide(int, int)[pri:0, instance:com.testNGassignment.TestNG_Groups_Parameters@11758f2a]" name="divide" duration-ms="9" started-at="2020-06-28T18:56:05 IST" finished-at="2020-06-28T18:56:05 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- divide -->
-        <test-method status="PASS" signature="multiply(int, int)[pri:0, instance:com.testNGassignment.TestNG_Groups_Parameters@11758f2a]" name="multiply" duration-ms="16" started-at="2020-06-28T18:56:05 IST" finished-at="2020-06-28T18:56:05 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- multiply -->
-      </class> <!-- com.testNGassignment.TestNG_Groups_Parameters -->
-    </test> <!-- Grouping and Parameter Scenarios -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- method4 -->
+      </class> <!-- com.testNGassignment.TestNG_AssertionReports -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

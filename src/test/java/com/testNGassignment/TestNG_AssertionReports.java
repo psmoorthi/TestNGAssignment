@@ -21,18 +21,18 @@ public class TestNG_AssertionReports extends BaseTest{
   public void method2() {
 	 int expectedresults=15;
 	 int actual=number1-number2;
-	 Assert.assertTrue(false);
+	 Assert.assertTrue(true);
 	 Reporter.log("Failed Testcase", true); 
   }
-  
+  @Test
   public void method3() {
 
 		 int expectedresults=33;
 		 int actual=number1+number2;
 		 Assert.assertNotEquals(expectedresults, actual);
-		 Reporter.log("Failed due to Actual and Expected not matched", true);
+		 Reporter.log("Testcase Passed", true);
 	  }
-  
+  @Test
   public void method4() {
 
 		 int expectedresults=35;
