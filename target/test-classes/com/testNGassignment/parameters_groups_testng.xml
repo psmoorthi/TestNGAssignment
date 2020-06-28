@@ -7,10 +7,8 @@
 	<groups>
 			<run>
 				<include name = "Test A"/>
-				<include name = "Track A"/>
-				<include name = "Track B"/>
+				<include name = "Test C"/>
 				<exclude name= "Test B"></exclude>
-				<exclude name= "Track C"></exclude>
 			</run>
 		</groups>  
    <classes>
